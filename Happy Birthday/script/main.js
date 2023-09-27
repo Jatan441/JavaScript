@@ -196,7 +196,7 @@ const animationTimeline = () => {
     )
     .from(".hat", 0.5, {
       x: -100,
-      y: 370,
+      y: 400,
       rotation: -180,
       opacity: 0
     })
@@ -305,8 +305,3 @@ const resolveFetch = () => {
 
 resolveFetch().then(animationTimeline());
 
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  // audio.volume = 0.2;
-  audio.play(); 
-});
